@@ -27,7 +27,7 @@ void KEY_Init(void)
 * 函 数 名         : KEY_Scan
 * 函数功能		   : 按键扫描检测
 * 输    入         : mode=0:单次按下按键
-					 mode=1：连续按下按键
+					 mode=1：连续按下按键（按住不动）
 * 输    出         : 0：未有按键按下
 					 KEY_UP：K_UP键按下
 					 KEY_DOWN：K_DOWN键按下
@@ -36,7 +36,7 @@ void KEY_Init(void)
 *******************************************************************************/
 u8 KEY_Scan(u8 mode)
 {
-	static u8 key=1;
+	static u8 key=1;   //相当于上次按键状态
 	if(key==1&&(K_UP==1||K_DOWN==0||K_LEFT==0||K_RIGHT==0)) //任意一个按键按下
 	{
 		delay_ms(10);  //消抖
