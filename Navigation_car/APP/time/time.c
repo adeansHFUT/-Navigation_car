@@ -2,8 +2,10 @@
 #include "led.h"
 #include "tftlcd.h"
 #include "key.h"
+#include "gizwits_product.h"
 
-u8 key_num = 0;  
+extern uint32_t timerMsCount;
+
 /*******************************************************************************
 * 函 数 名         : TIM4_Init
 * 函数功能		   : TIM4初始化函数
@@ -176,7 +178,9 @@ void TIM2_IRQHandler(void)
 {
 	if(TIM_GetITStatus(TIM2,TIM_IT_Update))
 	{
-		key_num = KEY_Scan(0);
+		if(0 == timerMsCount%50)
+				key_num = KEY_Scan(0);  //100ms
+		gizTimerMs();//系统毫秒定时
 	}
 	TIM_ClearITPendingBit(TIM2,TIM_IT_Update);	
 }

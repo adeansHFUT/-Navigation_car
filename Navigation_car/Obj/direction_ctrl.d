@@ -41,6 +41,15 @@
 .\obj\direction_ctrl.o: .\APP\rfid_s.h
 .\obj\direction_ctrl.o: .\User\include.h
 .\obj\direction_ctrl.o: .\APP\rfid_s.h
-.\obj\direction_ctrl.o: .\APP\direct_m.h
+.\obj\direction_ctrl.o: .\APP\direction_ctrl.h
+.\obj\direction_ctrl.o: .\Gizwits\gizwits_product.h
+.\obj\direction_ctrl.o: .\Gizwits\gizwits_protocol.h
+.\obj\direction_ctrl.o: D:\KEIL5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\direction_ctrl.o: D:\KEIL5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\obj\direction_ctrl.o: D:\KEIL5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\direction_ctrl.o: .\Utils\common.h
+.\obj\direction_ctrl.o: D:\KEIL5\ARM\ARMCC\Bin\..\include\ctype.h
+.\obj\direction_ctrl.o: .\APP\Graph.h
+.\obj\direction_ctrl.o: .\APP\wifi.h
 .\obj\direction_ctrl.o: .\User\include.h
-.\obj\direction_ctrl.o: .\APP\direct_m.h
+.\obj\direction_ctrl.o: .\APP\wifi.h

@@ -337,7 +337,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F10X_HD</Define>
               <Undefine></Undefine>
-              <IncludePath>.\User;.\Libraries\CMSIS;.\Libraries\STM32F10x_StdPeriph_Driver\inc;.\APP\led;.\Public;.\APP\beep;.\APP\smg;.\APP\key;.\APP\exti;.\APP\time;.\APP\pwm;.\APP\iwdg;.\APP\wwdg;.\APP\input;.\APP\touch_key;.\APP\wkup;.\APP\adc;.\APP\adc_temp;.\APP\dac;.\APP\pwm_dac;.\APP\dma;.\APP\rtc;.\APP\24Cxx;.\APP\iic;.\APP\ds18b20;.\APP\hwjs;.\APP\rs485;.\APP\can;.\APP\tftlcd;.\APP\spi;.\APP\nrf24l01;.\APP\dht11;.\APP\oled;.\APP\RC522;.\APP</IncludePath>
+              <IncludePath>.\User;.\Libraries\CMSIS;.\Libraries\STM32F10x_StdPeriph_Driver\inc;.\APP\led;.\Public;.\APP\beep;.\APP\smg;.\APP\key;.\APP\exti;.\APP\time;.\APP\pwm;.\APP\iwdg;.\APP\wwdg;.\APP\input;.\APP\touch_key;.\APP\wkup;.\APP\adc;.\APP\adc_temp;.\APP\dac;.\APP\pwm_dac;.\APP\dma;.\APP\rtc;.\APP\24Cxx;.\APP\iic;.\APP\ds18b20;.\APP\hwjs;.\APP\rs485;.\APP\can;.\APP\tftlcd;.\APP\spi;.\APP\nrf24l01;.\APP\dht11;.\APP\oled;.\APP\RC522;.\APP;.\Gizwits;.\Utils</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -394,17 +394,117 @@
             <File>
               <FileName>include.h</FileName>
               <FileType>5</FileType>
-              <FilePath>.\include.h</FilePath>
+              <FilePath>.\User\include.h</FilePath>
             </File>
           </Files>
         </Group>
         <Group>
-          <GroupName>Startup</GroupName>
+          <GroupName>APP</GroupName>
           <Files>
             <File>
-              <FileName>startup_stm32f10x_hd.s</FileName>
-              <FileType>2</FileType>
-              <FilePath>.\Libraries\CMSIS\startup_stm32f10x_hd.s</FilePath>
+              <FileName>led.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\APP\led\led.c</FilePath>
+            </File>
+            <File>
+              <FileName>tftlcd.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\APP\tftlcd\tftlcd.c</FilePath>
+            </File>
+            <File>
+              <FileName>RC522.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\APP\RC522\RC522.c</FilePath>
+            </File>
+            <File>
+              <FileName>time.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\APP\time\time.c</FilePath>
+            </File>
+            <File>
+              <FileName>key.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\APP\key\key.c</FilePath>
+            </File>
+            <File>
+              <FileName>direction_ctrl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\APP\direction_ctrl.c</FilePath>
+            </File>
+            <File>
+              <FileName>rfid_s.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\APP\rfid_s.c</FilePath>
+            </File>
+            <File>
+              <FileName>Graph.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\APP\Graph.c</FilePath>
+            </File>
+            <File>
+              <FileName>wifi.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\APP\wifi.c</FilePath>
+            </File>
+            <File>
+              <FileName>wifi.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\APP\wifi.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Gizwits</GroupName>
+          <Files>
+            <File>
+              <FileName>gizwits_product.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Gizwits\gizwits_product.c</FilePath>
+            </File>
+            <File>
+              <FileName>gizwits_protocol.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Gizwits\gizwits_protocol.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Utils</GroupName>
+          <Files>
+            <File>
+              <FileName>common.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Utils\common.c</FilePath>
+            </File>
+            <File>
+              <FileName>dataPointTools.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Utils\dataPointTools.c</FilePath>
+            </File>
+            <File>
+              <FileName>ringbuffer.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Utils\ringbuffer.c</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>Public</GroupName>
+          <Files>
+            <File>
+              <FileName>system.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Public\system.c</FilePath>
+            </File>
+            <File>
+              <FileName>SysTick.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Public\SysTick.c</FilePath>
+            </File>
+            <File>
+              <FileName>usart.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Public\usart.c</FilePath>
             </File>
           </Files>
         </Group>
@@ -514,67 +614,12 @@
           </Files>
         </Group>
         <Group>
-          <GroupName>APP</GroupName>
+          <GroupName>Startup</GroupName>
           <Files>
             <File>
-              <FileName>led.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\APP\led\led.c</FilePath>
-            </File>
-            <File>
-              <FileName>tftlcd.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\APP\tftlcd\tftlcd.c</FilePath>
-            </File>
-            <File>
-              <FileName>RC522.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\APP\RC522\RC522.c</FilePath>
-            </File>
-            <File>
-              <FileName>time.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\APP\time\time.c</FilePath>
-            </File>
-            <File>
-              <FileName>key.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\APP\key\key.c</FilePath>
-            </File>
-            <File>
-              <FileName>direction_ctrl.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\APP\direction_ctrl.c</FilePath>
-            </File>
-            <File>
-              <FileName>direction_ctrl.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\APP\direction_ctrl.h</FilePath>
-            </File>
-            <File>
-              <FileName>rfid_s.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\APP\rfid_s.c</FilePath>
-            </File>
-          </Files>
-        </Group>
-        <Group>
-          <GroupName>Public</GroupName>
-          <Files>
-            <File>
-              <FileName>system.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Public\system.c</FilePath>
-            </File>
-            <File>
-              <FileName>SysTick.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Public\SysTick.c</FilePath>
-            </File>
-            <File>
-              <FileName>usart.c</FileName>
-              <FileType>1</FileType>
-              <FilePath>.\Public\usart.c</FilePath>
+              <FileName>startup_stm32f10x_hd.s</FileName>
+              <FileType>2</FileType>
+              <FilePath>.\Libraries\CMSIS\startup_stm32f10x_hd.s</FilePath>
             </File>
           </Files>
         </Group>

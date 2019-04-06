@@ -33,3 +33,11 @@
 .\obj\time.o: .\APP\led\led.h
 .\obj\time.o: .\APP\tftlcd\tftlcd.h
 .\obj\time.o: .\APP\key\key.h
+.\obj\time.o: .\Gizwits\gizwits_product.h
+.\obj\time.o: .\Gizwits\gizwits_protocol.h
+.\obj\time.o: D:\KEIL5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\time.o: D:\KEIL5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\time.o: D:\KEIL5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\obj\time.o: D:\KEIL5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\time.o: .\Utils\common.h
+.\obj\time.o: D:\KEIL5\ARM\ARMCC\Bin\..\include\ctype.h

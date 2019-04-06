@@ -31,3 +31,10 @@
 .\obj\usart.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\obj\usart.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\obj\usart.o: D:\KEIL5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\usart.o: .\Gizwits\gizwits_product.h
+.\obj\usart.o: .\Gizwits\gizwits_protocol.h
+.\obj\usart.o: D:\KEIL5\ARM\ARMCC\Bin\..\include\stdbool.h
+.\obj\usart.o: D:\KEIL5\ARM\ARMCC\Bin\..\include\stdlib.h
+.\obj\usart.o: D:\KEIL5\ARM\ARMCC\Bin\..\include\string.h
+.\obj\usart.o: .\Utils\common.h
+.\obj\usart.o: D:\KEIL5\ARM\ARMCC\Bin\..\include\ctype.h

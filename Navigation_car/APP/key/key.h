@@ -32,7 +32,7 @@
 #define KEY_LEFT 3
 #define KEY_RIGHT 4  
 
-
+extern u8 key_num;  //按键返回数值
 
 void KEY_Init(void);
 u8 KEY_Scan(u8 mode);
