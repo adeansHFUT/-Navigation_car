@@ -26,6 +26,8 @@
 ".\obj\rc522.o"
 ".\obj\time.o"
 ".\obj\key.o"
+".\obj\direction_ctrl.o"
+".\obj\rfid_s.o"
 ".\obj\system.o"
 ".\obj\systick.o"
 ".\obj\usart.o"

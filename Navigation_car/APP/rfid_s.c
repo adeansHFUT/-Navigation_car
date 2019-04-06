@@ -7,7 +7,6 @@ u8 data_write[16] = {0};
 unsigned char data2[4]  = {0,0,0,0x01};
 unsigned char DefaultKey[6] = {0xFF, 0xFF, 0xFF, 0xFF, 0xFF, 0xFF}; 
 
-
 unsigned char g_ucTempbuf[20];
 extern u8 key_num;
 unsigned char status,i;

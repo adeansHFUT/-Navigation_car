@@ -1,4 +1,5 @@
 .\obj\main.o: User\main.c
+.\obj\main.o: User\include.h
 .\obj\main.o: .\Public\system.h
 .\obj\main.o: .\User\stm32f10x.h
 .\obj\main.o: .\Libraries\CMSIS\core_cm3.h
@@ -37,3 +38,9 @@
 .\obj\main.o: .\APP\RC522\RC522.h
 .\obj\main.o: .\APP\time\time.h
 .\obj\main.o: .\APP\key\key.h
+.\obj\main.o: .\APP\rfid_s.h
+.\obj\main.o: .\User\include.h
+.\obj\main.o: .\APP\rfid_s.h
+.\obj\main.o: .\APP\direct_m.h
+.\obj\main.o: .\User\include.h
+.\obj\main.o: .\APP\direct_m.h

@@ -3,7 +3,7 @@
 <title>Static Call Graph - [.\Obj\Template.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image .\Obj\Template.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sat Apr 06 15:24:49 2019
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Sat Apr 06 16:47:00 2019
 <BR><P>
 <H3>Maximum Stack Usage =        192 bytes + Unknown(Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -338,9 +338,9 @@ Global Symbols
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadRawRC
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBitMask
 </UL>
-<BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdWrite
-<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdRead
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdWrite
 </UL>
 
 <P><STRONG><a name="[51]"></a>ClearBitMask</STRONG> (Thumb, 28 bytes, Stack size 16 bytes, rc522.o(i.ClearBitMask))
@@ -417,11 +417,11 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[5c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_WriteData_Color
 <LI><a href="#[5b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Set_Window
 </UL>
-<BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TFTLCD_Init
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rfid_select
+<LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TFTLCD_Init
+<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 <LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task3_readcard
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task2_writecard
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rfid_select
-<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[5d]"></a>LCD_Display_Dir</STRONG> (Thumb, 96 bytes, Stack size 4 bytes, tftlcd.o(i.LCD_Display_Dir))
@@ -476,10 +476,10 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[61]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowChar
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task3_readcard
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task2_writecard
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rfid_select
+<BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rfid_select
 <LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task3_readcard
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task2_writecard
 </UL>
 
 <P><STRONG><a name="[63]"></a>LCD_ShowxNum</STRONG> (Thumb, 190 bytes, Stack size 60 bytes, tftlcd.o(i.LCD_ShowxNum))
@@ -541,9 +541,9 @@ Global Symbols
 </UL>
 <BR>[Calls]<UL><LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBitMask
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task3_readcard
+<BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task3_readcard
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task2_writecard
-<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[68]"></a>PcdAntennaOn</STRONG> (Thumb, 26 bytes, Stack size 8 bytes, rc522.o(i.PcdAntennaOn))
@@ -552,9 +552,9 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[53]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;SetBitMask
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadRawRC
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task3_readcard
+<BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task3_readcard
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task2_writecard
-<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[69]"></a>PcdAnticoll</STRONG> (Thumb, 112 bytes, Stack size 48 bytes, rc522.o(i.PcdAnticoll))
@@ -587,12 +587,12 @@ Global Symbols
 <LI><a href="#[54]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ReadRawRC
 <LI><a href="#[51]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;ClearBitMask
 </UL>
-<BR>[Called By]<UL><LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdWrite
-<LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect
+<BR>[Called By]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect
 <LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdRequest
 <LI><a href="#[6c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdRead
 <LI><a href="#[6b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdAuthState
 <LI><a href="#[69]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdAnticoll
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdWrite
 </UL>
 
 <P><STRONG><a name="[6c]"></a>PcdRead</STRONG> (Thumb, 84 bytes, Stack size 48 bytes, rc522.o(i.PcdRead))
@@ -622,9 +622,9 @@ Global Symbols
 <BR>[Calls]<UL><LI><a href="#[6f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_us
 <LI><a href="#[52]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;WriteRawRC
 </UL>
-<BR>[Called By]<UL><LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task3_readcard
+<BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[a9]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task3_readcard
 <LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task2_writecard
-<LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
 <P><STRONG><a name="[70]"></a>PcdSelect</STRONG> (Thumb, 114 bytes, Stack size 48 bytes, rc522.o(i.PcdSelect))
@@ -1056,8 +1056,8 @@ Global Symbols
 
 <P><STRONG><a name="[59]"></a>delay_ms</STRONG> (Thumb, 72 bytes, Stack size 0 bytes, systick.o(i.delay_ms))
 <BR><BR>[Called By]<UL><LI><a href="#[7c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TFTLCD_Init
-<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task2_writecard
 <LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
+<LI><a href="#[a8]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;task2_writecard
 <LI><a href="#[58]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_Scan
 </UL>
 
@@ -1078,7 +1078,8 @@ Global Symbols
 <P><STRONG><a name="[46]"></a>main</STRONG> (Thumb, 298 bytes, Stack size 16 bytes, main.o(i.main))
 <BR><BR>[Stack]<UL><LI>Max Depth = 192<LI>Call Chain = main &rArr; rfid_select &rArr; task3_readcard &rArr; PcdAuthState &rArr; PcdComMF522 &rArr; SetBitMask &rArr; WriteRawRC
 </UL>
-<BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
+<BR>[Calls]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rfid_select
+<LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
 <LI><a href="#[9b]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;USART1_Init
 <LI><a href="#[a6]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_SetCompare4
 <LI><a href="#[a5]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;TIM_SetCompare3
@@ -1098,11 +1099,10 @@ Global Symbols
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowString
 <LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
 <LI><a href="#[55]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;KEY_Init
-<LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rfid_select
 </UL>
 <BR>[Address Reference Count : 1]<UL><LI> entry9a.o(.ARM.Collect$$$$0000000B)
 </UL>
-<P><STRONG><a name="[a7]"></a>rfid_select</STRONG> (Thumb, 182 bytes, Stack size 16 bytes, main.o(i.rfid_select))
+<P><STRONG><a name="[a7]"></a>rfid_select</STRONG> (Thumb, 182 bytes, Stack size 16 bytes, rfid_s.o(i.rfid_select))
 <BR><BR>[Stack]<UL><LI>Max Depth = 176<LI>Call Chain = rfid_select &rArr; task3_readcard &rArr; PcdAuthState &rArr; PcdComMF522 &rArr; SetBitMask &rArr; WriteRawRC
 </UL>
 <BR>[Calls]<UL><LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowString
@@ -1113,11 +1113,10 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[46]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;main
 </UL>
 
-<P><STRONG><a name="[a8]"></a>task2_writecard</STRONG> (Thumb, 394 bytes, Stack size 16 bytes, main.o(i.task2_writecard))
+<P><STRONG><a name="[a8]"></a>task2_writecard</STRONG> (Thumb, 394 bytes, Stack size 16 bytes, rfid_s.o(i.task2_writecard))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = task2_writecard &rArr; PcdAuthState &rArr; PcdComMF522 &rArr; SetBitMask &rArr; WriteRawRC
 </UL>
 <BR>[Calls]<UL><LI><a href="#[59]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;delay_ms
-<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdWrite
 <LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect
 <LI><a href="#[6e]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdReset
 <LI><a href="#[6d]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdRequest
@@ -1128,11 +1127,12 @@ Global Symbols
 <LI><a href="#[63]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowxNum
 <LI><a href="#[62]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_ShowString
 <LI><a href="#[5a]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;LCD_Clear
+<LI><a href="#[71]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdWrite
 </UL>
 <BR>[Called By]<UL><LI><a href="#[a7]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;rfid_select
 </UL>
 
-<P><STRONG><a name="[a9]"></a>task3_readcard</STRONG> (Thumb, 366 bytes, Stack size 16 bytes, main.o(i.task3_readcard))
+<P><STRONG><a name="[a9]"></a>task3_readcard</STRONG> (Thumb, 366 bytes, Stack size 16 bytes, rfid_s.o(i.task3_readcard))
 <BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = task3_readcard &rArr; PcdAuthState &rArr; PcdComMF522 &rArr; SetBitMask &rArr; WriteRawRC
 </UL>
 <BR>[Calls]<UL><LI><a href="#[70]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;PcdSelect

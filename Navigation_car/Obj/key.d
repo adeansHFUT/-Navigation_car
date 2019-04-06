@@ -1,5 +1,5 @@
 .\obj\key.o: APP\key\key.c
-.\obj\key.o: APP\key\key.h
+.\obj\key.o: .\User\include.h
 .\obj\key.o: .\Public\system.h
 .\obj\key.o: .\User\stm32f10x.h
 .\obj\key.o: .\Libraries\CMSIS\core_cm3.h
@@ -31,3 +31,16 @@
 .\obj\key.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\stm32f10x_wwdg.h
 .\obj\key.o: .\Libraries\STM32F10x_StdPeriph_Driver\inc\misc.h
 .\obj\key.o: .\Public\SysTick.h
+.\obj\key.o: .\APP\led\led.h
+.\obj\key.o: .\Public\usart.h
+.\obj\key.o: D:\KEIL5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\key.o: .\APP\tftlcd\tftlcd.h
+.\obj\key.o: .\APP\RC522\RC522.h
+.\obj\key.o: .\APP\time\time.h
+.\obj\key.o: .\APP\key\key.h
+.\obj\key.o: .\APP\rfid_s.h
+.\obj\key.o: .\User\include.h
+.\obj\key.o: .\APP\rfid_s.h
+.\obj\key.o: .\APP\direct_m.h
+.\obj\key.o: .\User\include.h
+.\obj\key.o: .\APP\direct_m.h

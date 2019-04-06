@@ -337,7 +337,7 @@
               <MiscControls></MiscControls>
               <Define>USE_STDPERIPH_DRIVER,STM32F10X_HD</Define>
               <Undefine></Undefine>
-              <IncludePath>.\User;.\Libraries\CMSIS;.\Libraries\STM32F10x_StdPeriph_Driver\inc;.\APP\led;.\Public;.\APP\beep;.\APP\smg;.\APP\key;.\APP\exti;.\APP\time;.\APP\pwm;.\APP\iwdg;.\APP\wwdg;.\APP\input;.\APP\touch_key;.\APP\wkup;.\APP\adc;.\APP\adc_temp;.\APP\dac;.\APP\pwm_dac;.\APP\dma;.\APP\rtc;.\APP\24Cxx;.\APP\iic;.\APP\ds18b20;.\APP\hwjs;.\APP\rs485;.\APP\can;.\APP\tftlcd;.\APP\spi;.\APP\nrf24l01;.\APP\dht11;.\APP\oled;.\APP\RC522</IncludePath>
+              <IncludePath>.\User;.\Libraries\CMSIS;.\Libraries\STM32F10x_StdPeriph_Driver\inc;.\APP\led;.\Public;.\APP\beep;.\APP\smg;.\APP\key;.\APP\exti;.\APP\time;.\APP\pwm;.\APP\iwdg;.\APP\wwdg;.\APP\input;.\APP\touch_key;.\APP\wkup;.\APP\adc;.\APP\adc_temp;.\APP\dac;.\APP\pwm_dac;.\APP\dma;.\APP\rtc;.\APP\24Cxx;.\APP\iic;.\APP\ds18b20;.\APP\hwjs;.\APP\rs485;.\APP\can;.\APP\tftlcd;.\APP\spi;.\APP\nrf24l01;.\APP\dht11;.\APP\oled;.\APP\RC522;.\APP</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -390,6 +390,11 @@
               <FileName>stm32f10x_it.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\User\stm32f10x_it.c</FilePath>
+            </File>
+            <File>
+              <FileName>include.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\include.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -535,6 +540,21 @@
               <FileName>key.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\APP\key\key.c</FilePath>
+            </File>
+            <File>
+              <FileName>direction_ctrl.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\APP\direction_ctrl.c</FilePath>
+            </File>
+            <File>
+              <FileName>direction_ctrl.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\APP\direction_ctrl.h</FilePath>
+            </File>
+            <File>
+              <FileName>rfid_s.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\APP\rfid_s.c</FilePath>
             </File>
           </Files>
         </Group>
