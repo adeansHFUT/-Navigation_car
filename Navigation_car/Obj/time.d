@@ -41,3 +41,4 @@
 .\obj\time.o: D:\KEIL5\ARM\ARMCC\Bin\..\include\string.h
 .\obj\time.o: .\Utils\common.h
 .\obj\time.o: D:\KEIL5\ARM\ARMCC\Bin\..\include\ctype.h
+.\obj\time.o: .\APP\adc\adc.h

@@ -1,6 +1,6 @@
-#include "include.h"
+#include "key.h"
+#include "SysTick.h"
 
-u8 key_num = 0;  //按键返回数值
 /*******************************************************************************
 * 函 数 名         : KEY_Init
 * 函数功能		   : 按键初始化
@@ -21,6 +21,17 @@ void KEY_Init(void)
 	GPIO_InitStructure.GPIO_Mode=GPIO_Mode_IPU;	//上拉输入
 	GPIO_InitStructure.GPIO_Speed=GPIO_Speed_50MHz;
 	GPIO_Init(KEY_Port,&GPIO_InitStructure);
+}
+
+void input_init(void)     //霍尔输入
+{
+	GPIO_InitTypeDef GPIO_InitStructure; //定义结构体变量	
+	RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOA,ENABLE);
+	
+	GPIO_InitStructure.GPIO_Pin=GPIO_Pin_5|GPIO_Pin_2|GPIO_Pin_3|GPIO_Pin_4;	   //选择你要设置的IO口
+	GPIO_InitStructure.GPIO_Mode=GPIO_Mode_IPU;  
+	GPIO_InitStructure.GPIO_Speed=GPIO_Speed_50MHz;	   //设置传输速率
+	GPIO_Init(GPIOA,&GPIO_InitStructure);		  /* 初始化GPIO */
 }
 
 /*******************************************************************************

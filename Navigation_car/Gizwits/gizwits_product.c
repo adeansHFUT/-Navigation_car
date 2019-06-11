@@ -304,7 +304,7 @@ void userInit(void)     //初始化
     
     /** Warning !!! DataPoint Variables Init , Must Within The Data Range **/ 
     
-      currentDataPoint.valueSTART = 0 ;
+      currentDataPoint.valueSTART = 0;
       currentDataPoint.valueEND = 0;
       currentDataPoint.valueCurrentPoint = 1;
       currentDataPoint.valueObstacle = 0;
